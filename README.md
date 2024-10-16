@@ -27,9 +27,6 @@ Regarding how to resolve this error, all steps need to be done carefully so that
 ## 1st Step
 
 Press your Windows key and type: "Turn windows features on or off" and press ENTER
-This is what you should see:
-
-![1st step](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_2.png?raw=true)
 
 
 After pressing ENTER a new screen like the one below should appear:
@@ -44,3 +41,16 @@ After enabling it, restart your computer.
 ## 2nd Step
 When your computer starts up, something will appear saying "Updates Coming [...]%"
 If it does, then the first step was successful.
+
+To start the second step, press the Windows key again and now type: "Hyper-V Manager" and press ENTER.
+
+After opening Hyper-V Manager, click on the name of your computer as the example:
+
+![3rd Sc](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_4.png?raw=true)
+
+Once you have selected your computer, simply follow the steps below:
+
+![1](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_5.png?raw=true)
+![2]()
+![3]()
+![4]()
