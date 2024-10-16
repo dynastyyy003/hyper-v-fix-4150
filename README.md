@@ -24,7 +24,7 @@ As I was reading some manuals and forums about how WSL behaves, I discovered a s
 
 Regarding how to resolve this error, all steps need to be done carefully so that nothing is different from mine.
 
-### 1st Step
+## 1st Step
 
 Press your Windows key and type: "Turn windows features on or off" and press ENTER
 This is what you should see:
