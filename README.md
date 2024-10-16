@@ -38,4 +38,9 @@ After pressing ENTER a new screen like the one below should appear:
 ![1st step2](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_3.png?raw=true)
 
 All you need to do in this step is to enable the "Hyper-V" option if it is disabled.
+
 After enabling it, restart your computer.
+
+## 2nd Step
+When your computer starts up, something will appear saying "Updates Coming [...]%"
+If it does, then the first step was successful.
