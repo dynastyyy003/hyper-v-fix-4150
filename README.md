@@ -17,3 +17,7 @@ As you can see, in the image below, my machine has an IP that starts with 172.[.
 ![IP screenshot](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_1.png?raw=true)
 
 With this generated IP, we can perform most tasks on the virtual machine, but if you want to practice pentests or network tests, you won't be able to do it using an internal network.
+
+As I was reading some manuals and forums about how WSL behaves, I discovered a solution that was quite simple.
+
+# The Solution (Fix)
