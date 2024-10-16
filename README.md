@@ -12,4 +12,4 @@ I'm starting out in the world of digital cybersecurity, and I've often found mys
 
 Personally, up until the moment I'm posting this, I haven't found any tutorial on YouTube that could actually solve the problem without exhaustive steps, without losing my virtual machine's IP and having to format it, etc.
 
-![image alt](https://prnt.sc/yo8vaaoCuhPR)
+![image alt](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_1.png?raw=true)
