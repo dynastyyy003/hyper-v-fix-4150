@@ -51,6 +51,6 @@ wsl
 $ /mnt/c/Users/(Your User)
 ```
 3. Once inside the folder, create a file called .wslconfig and copy the text bellow
-![wslconfig]()
+![wslconfig](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/wlsconfig.png?raw=true)
 
 If you encounter any issues or have questions, feel free to open an issue in this repository.
