@@ -4,7 +4,7 @@
 > Note: This is my first time creating a GitHub repository, and I'm still learning. I hope this guide helps others facing similar issues.
 
 ## The Issue
-As a beginner in digital cybersecurity, I often encountered problems where my virtual machine (WSL) needed an external network connection to run certain programs or scripts. Most tutorials I found on YouTube either had too many steps, caused me to lose my virtual machine's IP, or required formatting the machine.
+As a student in digital cybersecurity, I often encountered problems where my virtual machine (WSL) needed an external network connection to run certain programs or scripts. Most tutorials I found on YouTube either had too many steps, caused me to lose my virtual machine's IP, or required formatting the machine.
 
 While the internal network  allows for basic tasks, it's not suitable for practicing penetration testing or network testing, which require an external network connection.
 
