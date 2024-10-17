@@ -58,6 +58,7 @@ $ /mnt/c/Users/(Your User)
 
 # Conclusion
 This documentation was written late at night so if you encounter any issues or have questions, feel free to open an issue in this repository.
+And also feel free to ask me any questions, I will answer them all as soon as possible.
 
 > Observations:
 > I still intend to create a video explaining step by step, but it depends on motivations that I don't have yet. If this mini step-by-step gets some views I will probably record the video immediately.
