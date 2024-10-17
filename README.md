@@ -53,5 +53,11 @@ $ /mnt/c/Users/(Your User)
 3. Once inside the folder, create a file called .wslconfig and copy the text bellow
 ![wslconfig](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/wlsconfig.png?raw=true)
 
+
+
+
 # Conclusion
 This documentation was written late at night so if you encounter any issues or have questions, feel free to open an issue in this repository.
+
+> Observations:
+> I still intend to create a video explaining step by step, but it depends on motivations that I don't have yet. If this mini step-by-step gets some views I will probably record the video immediately.
