@@ -1,56 +1,56 @@
-# Hyper-V Bridge network connection (External Network)
+# Hyper-V Bridge Network Connection (External Network)
+ A fix for those who want to use WSL 2 on bridge networking.
 
-A fix for those who want to use WSL 2 on bridge networking.
+> Note: This is my first time creating a GitHub repository, and I'm still learning. I hope this guide helps others facing similar issues.
 
-> Basically, this is my first time doing Github stuff, and I don't know much about it. So, with that said, let me get started.
+## The Issue
+As a beginner in digital cybersecurity, I often encountered problems where my virtual machine (WSL) needed an external network connection to run certain programs or scripts. Most tutorials I found on YouTube either had too many steps, caused me to lose my virtual machine's IP, or required formatting the machine.
 
+While the internal network  allows for basic tasks, it's not suitable for practicing penetration testing or network testing, which require an external network connection.
 
-
-# The Issue
-
-I'm starting out in the world of digital cybersecurity, and I've often found myself having trouble using many programs or scripts that required my virtual machine (WSL) to have a connection to the external network.
-
-Personally, up until the moment I'm posting this, I haven't found any tutorial on YouTube that could actually solve the problem without exhaustive steps, without losing my virtual machine's IP and having to format it, etc.
-
-As you can see, in the image below, my machine has an IP that starts with 172.[...], this is the virtual IP that was generated when I started the machine.
-
-![IP screenshot](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_1.png?raw=true)
-
-With this generated IP, we can perform most tasks on the virtual machine, but if you want to practice pentests or network tests, you won't be able to do it using an internal network.
-
-As I was reading some manuals and forums about how WSL behaves, I discovered a solution that was quite simple.
+After researching various manuals and forums, I found a simple solution to this problem.
 
 # The Solution (Fix)
+## Step 1: Enable Hyper-V
+1. Press the Windows key and type: "Turn Windows features on or off."
+2. Press ENTER to open the Windows Features window.
+3. Ensure that the Hyper-V option is enabled. If it's not, check the box next to it.
+4. Click OK and restart your computer.Enable Hyper-V
 
-Regarding how to resolve this error, all steps need to be done carefully so that nothing is different from mine.
+## Step 2: Create a Virtual Switch in Hyper-V Manager
+1. After your computer restarts, press the Windows key and type: "Hyper-V Manager."
+2. Press ENTER to open Hyper-V Manager.
+3. In the left pane, click on your computer (probably should be the only thing to appear)
+4. In the right pane, click on Virtual Switch Manager
+5. In the Virtual Switch Manager window, click on "New virtual network switch" and click Create Virtual Switch
+6. In the Virtual Switch Type section, select External Network.
+7. Under Connection type, select the physical network adapter you want to use for the external network.
+8. Under Name, give your virtual switch the name "Bridge" (exactly like that)
+9. Ensure that Allow management operating system to share this network adapter is checked.
+10. Click Apply and then OK to create the virtual switch.
 
-## 1st Step
 
-Press your Windows key and type: "Turn windows features on or off" and press ENTER
+## Step 3: Restart  WSL 2 to Use the Virtual Switch
+1. Open PowerShell as an administrator.
+2. Run the following command to restart WSL and apply changes:
 
+```
+wsl --shutdown
+``` 
 
-After pressing ENTER a new screen like the one below should appear:
+3. Start WSL again by opening a new terminal or running:
 
+```
+wsl
+```
 
-![1st step2](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_3.png?raw=true)
+## Step 4: Create .wslconfig file
+1. Start your machine terminal 
+2. Now you have to find your Windows User inside your terminal, the directory should be:
+```
+$ /mnt/c/Users/(Your User)
+```
+3. Once inside the folder, create a file called .wslconfig and copy the text bellow
+![wslconfig]()
 
-All you need to do in this step is to enable the "Hyper-V" option if it is disabled.
-
-After enabling it, restart your computer.
-
-## 2nd Step
-When your computer starts up, something will appear saying "Updates Coming [...]%"
-If it does, then the first step was successful.
-
-To start the second step, press the Windows key again and now type: "Hyper-V Manager" and press ENTER.
-
-After opening Hyper-V Manager, click on the name of your computer as the example:
-
-![3rd Sc](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_4.png?raw=true)
-
-Once you have selected your computer, simply follow the steps below:
-
-![1](https://github.com/dynastyyy003/hyper-v-fix-4150/blob/main/Screenshot_5.png?raw=true)
-![2]()
-![3]()
-![4]()
+If you encounter any issues or have questions, feel free to open an issue in this repository.
