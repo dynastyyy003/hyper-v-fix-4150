@@ -15,7 +15,7 @@ After researching various manuals and forums, I found a simple solution to this 
 1. Press the Windows key and type: "Turn Windows features on or off."
 2. Press ENTER to open the Windows Features window.
 3. Ensure that the Hyper-V option is enabled. If it's not, check the box next to it.
-4. Click OK and restart your computer.Enable Hyper-V
+4. Click OK and reboot your computer.
 
 ## Step 2: Create a Virtual Switch in Hyper-V Manager
 1. After your computer restarts, press the Windows key and type: "Hyper-V Manager."
@@ -30,7 +30,7 @@ After researching various manuals and forums, I found a simple solution to this 
 10. Click Apply and then OK to create the virtual switch.
 
 
-## Step 3: Restart  WSL 2 to Use the Virtual Switch
+## Step 3: Restart  WSL to Use the Virtual Switch
 1. Open PowerShell as an administrator.
 2. Run the following command to restart WSL and apply changes:
 
